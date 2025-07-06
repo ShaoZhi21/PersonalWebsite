@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Code, Lightbulb, Globe, Heart, Coffee, Gamepad2 } from 'lucide-react'
+import { Code, Lightbulb, Globe, Heart, Coffee, Gamepad2, Trophy } from 'lucide-react'
 
 const FunFacts = () => {
   const facts = [
@@ -16,7 +16,7 @@ const FunFacts = () => {
       id: 2,
       icon: Lightbulb,
       title: "AI/ML Passionate",
-      description: "Fascinated by artificial intelligence and machine learning. I'm constantly exploring new algorithms and their practical applications.",
+      description: "Fascinated by artificial intelligence and machine learning. I&apos;m constantly exploring new algorithms and their practical applications.",
       color: "from-purple-400 to-purple-600"
     },
     {
@@ -44,7 +44,7 @@ const FunFacts = () => {
       id: 6,
       icon: Gamepad2,
       title: "Gaming & Tech Geek",
-      description: "When I'm not coding, I enjoy exploring new games and staying updated with the latest tech trends and gadgets.",
+      description: "When I&apos;m not coding, I enjoy exploring new games and staying updated with the latest tech trends and gadgets.",
       color: "from-indigo-400 to-indigo-600"
     }
   ]
@@ -98,7 +98,7 @@ const FunFacts = () => {
               <span className="gradient-text">Fun Facts & Interests</span>
             </h2>
             <p className="text-text-secondary text-lg max-w-2xl mx-auto">
-              Beyond coding, here's what makes me tick and drives my passion for technology.
+              Beyond coding, here&apos;s what makes me tick and drives my passion for technology.
             </p>
           </motion.div>
 
@@ -163,7 +163,7 @@ const FunFacts = () => {
               </h3>
               <div className="space-y-4">
                 <blockquote className="text-text-secondary italic text-lg border-l-4 border-accent pl-4">
-                  "Technology is best when it brings people together and solves real problems."
+                  &quot;Technology is best when it brings people together and solves real problems.&quot;
                 </blockquote>
                 <div className="space-y-3">
                   <div className="flex items-start space-x-3">

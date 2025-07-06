@@ -22,7 +22,7 @@ const Hero = () => {
       setCurrentRole((prev) => (prev + 1) % roles.length)
     }, 2000)
     return () => clearInterval(interval)
-  }, [])
+  }, [roles.length])
 
   const scrollToAbout = () => {
     const aboutSection = document.querySelector('#about')
