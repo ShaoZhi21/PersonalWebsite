@@ -2,8 +2,18 @@
 
 import { motion } from 'framer-motion'
 import { Mail, MapPin, Github, Linkedin, Heart, ArrowUp, Send } from 'lucide-react'
+import { useState } from 'react'
 
 const Footer = () => {
+  const [message, setMessage] = useState('')
+  const [name, setName] = useState('')
+
+  const handleEmailClick = () => {
+    const subject = `Message from ${name || 'Website Visitor'}`
+    const mailtoLink = `mailto:soongshaozhi@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`
+    window.location.href = mailtoLink
+  }
+
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
@@ -146,42 +156,37 @@ const Footer = () => {
               className="glass-card p-8 rounded-2xl bg-[#111111] border border-[#222222]"
             >
               <h3 className="text-2xl font-bold mb-6 gradient-text">Send Me A Message</h3>
-              <form className="space-y-6">
+              <div className="space-y-6">
                 <div>
                   <label htmlFor="name" className="block text-[#888888] text-sm mb-2">Name</label>
                   <input
                     type="text"
                     id="name"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
                     className="w-full px-4 py-3 bg-black border border-[#222222] rounded-xl text-[#E5E5E7] placeholder-[#666666] focus:outline-none focus:border-[#0A84FF] transition-colors duration-300"
                     placeholder="Your name"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="email" className="block text-[#888888] text-sm mb-2">Email</label>
-                  <input
-                    type="email"
-                    id="email"
-                    className="w-full px-4 py-3 bg-black border border-[#222222] rounded-xl text-[#E5E5E7] placeholder-[#666666] focus:outline-none focus:border-[#0A84FF] transition-colors duration-300"
-                    placeholder="your.email@example.com"
                   />
                 </div>
                 <div>
                   <label htmlFor="message" className="block text-[#888888] text-sm mb-2">Message</label>
                   <textarea
                     id="message"
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
                     rows={4}
                     className="w-full px-4 py-3 bg-black border border-[#222222] rounded-xl text-[#E5E5E7] placeholder-[#666666] focus:outline-none focus:border-[#0A84FF] transition-colors duration-300 resize-none"
                     placeholder="Tell me about your project..."
                   />
                 </div>
                 <button
-                  type="submit"
+                  onClick={handleEmailClick}
                   className="w-full flex items-center justify-center space-x-2 px-6 py-3 bg-[#0A84FF] hover:bg-[#0A84FF]/90 transition-colors duration-300 rounded-xl text-white font-medium shadow-lg"
                 >
-                  <Send size={20} />
-                  <span>Send Message</span>
+                  <Mail size={20} />
+                  <span>Open Mail App</span>
                 </button>
-              </form>
+              </div>
             </motion.div>
           </div>
         </div>

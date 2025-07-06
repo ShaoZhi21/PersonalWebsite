@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { Menu, X, Mail, Linkedin, MessageCircle } from 'lucide-react'
+import { Menu, X, Mail, Linkedin, MessageCircle, Github } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 
 const Header = () => {
@@ -97,6 +97,17 @@ const Header = () => {
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
+              href="https://github.com/ShaoZhi21"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 bg-[#2C2C2E] hover:bg-[#0A84FF] rounded-lg transition-colors duration-300 flex items-center justify-center"
+            >
+              <Github size={20} className="text-white" />
+            </motion.a>
+            <motion.a
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6, delay: 0.5 }}
               href="https://linkedin.com/in/soongshaozhi"
               target="_blank"
               rel="noopener noreferrer"
@@ -107,7 +118,7 @@ const Header = () => {
             <motion.a
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.5 }}
+              transition={{ duration: 0.6, delay: 0.6 }}
               href="mailto:soongshaozhi@gmail.com"
               className="apple-button flex items-center space-x-2"
             >
