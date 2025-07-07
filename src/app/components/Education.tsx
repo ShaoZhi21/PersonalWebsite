@@ -63,19 +63,21 @@ const Education = () => {
                 <h4 className="text-base md:text-lg font-semibold text-white mb-2">
                   Bachelor of Computing in Computer Science
                 </h4>
-                <p className="text-base md:text-lg font-bold text-white mt-2 mb-2 tracking-wide">
+                <p className="text-base md:text-lg font-bold text-white mt-2 mb-4 tracking-wide">
                   Honours (Distinction)
                 </p>
-                <div className="mt-2 flex flex-col sm:flex-row sm:justify-center md:justify-start gap-4">
-                  <div className="flex items-center justify-center md:justify-start space-x-3">
+                
+                <div className="flex flex-col items-center md:items-start space-y-3">
+                  <div className="flex items-center space-x-3">
                     <Calendar className="text-[#0A84FF]" size={18} />
                     <span className="text-[#E5E5E7]">August 2024 – May 2028</span>
                   </div>
-                  <div className="flex items-center justify-center md:justify-start space-x-3">
+                  <div className="flex items-center space-x-3">
                     <MapPin className="text-[#0A84FF]" size={18} />
                     <span className="text-[#E5E5E7]">Singapore</span>
                   </div>
                 </div>
+             
               </div>
             </div>
           </div>

@@ -119,13 +119,13 @@ const Hero = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: 0.4 }}
-                className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 w-full sm:w-auto"
+                className="flex flex-row items-center justify-center lg:justify-start gap-2 sm:gap-4 flex-wrap"
               >
                 <a
                   href="mailto:soongshaozhi@gmail.com"
-                  className="w-full sm:w-auto flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-[#1E40AF] to-[#3B82F6] text-white font-medium rounded-full shadow-lg hover:from-[#1E40AF]/90 hover:to-[#3B82F6]/90 transition-all duration-300 border-2 border-[#1E40AF]"
+                  className="flex items-center gap-2 px-4 sm:px-6 py-3 bg-gradient-to-r from-[#1E40AF] to-[#3B82F6] text-white font-medium rounded-full shadow-lg hover:from-[#1E40AF]/90 hover:to-[#3B82F6]/90 transition-all duration-300 border-2 border-[#1E40AF] text-sm sm:text-base"
                 >
-                  <Mail size={20} />
+                  <Mail size={16} className="sm:w-5 sm:h-5" />
                   <span>Get In Touch</span>
                 </a>
                 <a
@@ -134,16 +134,16 @@ const Hero = () => {
                     e.preventDefault()
                     document.querySelector('#projects')?.scrollIntoView({ behavior: 'smooth' })
                   }}
-                  className="w-full sm:w-auto flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-[#8B5CF6] to-[#A855F7] text-white font-medium rounded-full shadow-lg hover:from-[#8B5CF6]/90 hover:to-[#A855F7]/90 transition-all duration-300 border-2 border-[#8B5CF6]"
+                  className="flex items-center gap-2 px-4 sm:px-6 py-3 bg-gradient-to-r from-[#8B5CF6] to-[#A855F7] text-white font-medium rounded-full shadow-lg hover:from-[#8B5CF6]/90 hover:to-[#A855F7]/90 transition-all duration-300 border-2 border-[#8B5CF6] text-sm sm:text-base"
                 >
                   <span>View Projects</span>
                 </a>
                 <button
                   type="button"
                   onClick={scrollToAI}
-                  className="w-full sm:w-auto flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-[#34D399] to-[#10B981] text-white font-medium rounded-full shadow-lg hover:from-[#34D399]/90 hover:to-[#10B981]/90 transition-all duration-300 border-2 border-[#34D399]"
+                  className="flex items-center gap-2 px-4 sm:px-6 py-3 bg-gradient-to-r from-[#34D399] to-[#10B981] text-white font-medium rounded-full shadow-lg hover:from-[#34D399]/90 hover:to-[#10B981]/90 transition-all duration-300 border-2 border-[#34D399] text-sm sm:text-base"
                 >
-                  <MessageCircle size={20} />
+                  <MessageCircle size={16} className="sm:w-5 sm:h-5" />
                   <span>Ask ShaoAI</span>
                 </button>
               </motion.div>
@@ -217,7 +217,7 @@ const Hero = () => {
       </div>
 
       {/* Scroll down section - perfectly centered */}
-      <div className="absolute bottom-4 sm:bottom-6 left-0 right-0 flex justify-center z-20">
+      <div className="absolute bottom-0 sm:bottom-6 left-0 right-0 flex justify-center z-20">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

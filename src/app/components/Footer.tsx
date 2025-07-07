@@ -196,7 +196,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 sm:px-6 py-12">
         <div className="max-w-5xl mx-auto grid md:grid-cols-3 gap-16">
           {/* About */}
-          <div className="text-center">
+          <div className="text-center md:text-left">
             <h3 className="text-[#E5E5E7] font-bold mb-4">Shao Zhi</h3>
             <p className="text-[#888888] leading-relaxed">
               A passionate Computer Science student and full-stack developer focused on creating innovative solutions and building amazing digital experiences.
@@ -204,9 +204,9 @@ const Footer = () => {
           </div>
 
           {/* Quick Links */}
-          <div className="text-center">
-            <h3 className="text-[#E5E5E7] font-bold mb-4">Quick Links</h3>
-            <ul className="space-y-2">
+          <div className="flex flex-col items-center">
+            <h3 className="text-[#E5E5E7] font-bold mb-4 mr-4 text-center">Quick Links</h3>
+            <ul className="space-y-2 w-fit">
               {[
                 { name: 'About', href: '#about' },
                 { name: 'Education', href: '#education' },
@@ -229,9 +229,9 @@ const Footer = () => {
           </div>
 
           {/* Contact Info */}
-          <div className="text-center">
+          <div className="text-center md:text-left">
             <h3 className="text-[#E5E5E7] font-bold mb-4">Contact</h3>
-            <div className="space-y-4 inline-flex flex-col items-center">
+            <div className="space-y-4 flex flex-col items-center md:items-start">
               <a
                 href="mailto:soongshaozhi@gmail.com"
                 className="flex items-center space-x-2 text-[#888888] hover:text-[#0A84FF] transition-colors duration-300"

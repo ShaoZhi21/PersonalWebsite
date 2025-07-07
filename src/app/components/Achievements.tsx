@@ -72,7 +72,8 @@ const Achievements = () => {
           {/* Desktop Timeline */}
           <div 
             ref={scrollRef}
-            className="hidden lg:block relative mb-20 overflow-x-auto pb-8 scroll-smooth"
+            className="hidden lg:block relative mb-20 overflow-x-auto pb-8 scroll-smooth pt-8 scrollbar-hide"
+            style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
           >
             <div className="min-w-[2000px] h-[400px] relative">
               {/* Main horizontal line */}
