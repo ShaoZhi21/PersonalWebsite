@@ -217,7 +217,7 @@ const Hero = () => {
       </div>
 
       {/* Scroll down section - perfectly centered */}
-      <div className="absolute bottom-0 sm:bottom-6 left-0 right-0 flex justify-center z-20">
+      <div className="absolute bottom-0 sm:bottom-0 md:bottom-0 lg:bottom-0 xl:bottom-0 left-0 right-0 flex justify-center z-20">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
